@@ -1,0 +1,178 @@
+body {
+    font-size: 12px;
+    font-family: 'Playfair Display', roboto;    
+}
+
+/*-------------------- HEADER --------------------------*/
+#header {
+    background-color: #EAC926;
+}
+
+/*LOGO*/
+.logo {
+    width: 150px;
+    height: 50px;
+    margin: 30px 10px 0px 30px;
+    padding-top: 20px;
+}
+.logo img {
+    max-width: 100%;
+    max-height: 100%;   
+}
+
+/*BARRA DE BUSQUEDA*/
+.barraDeBusqueda {
+    margin-left: 15px;
+}
+.barraDeBusqueda i {
+    background-color: #ebebeb;
+    border-radius: 5%;
+    border: solid 1px #666;
+    padding: 1px 0px;
+    margin: 1px;
+}
+
+
+/*TEXTO*/
+.textoHeader {
+    text-align: center;
+}
+
+/*NAVEGADOR*/
+ul {
+    padding: 0px 0px;
+    margin: 0px 0px 0px 0px;
+    display: none;
+}
+.listaDes a{
+    text-decoration: none;
+}
+
+/*MENU BURGER*/
+.burger-menu i{
+    color: white;
+    background-color: #1259c3;
+    padding: 10px 15px;
+    border-radius: 15%;
+    font-size: 25px;
+    margin: 15px 57% 10px 43%;
+}
+
+/*--------------------------MAIN---------------------------*/
+main {
+    background-color: #ebebeb;
+    text-align:left;
+    padding-bottom: 10px;
+    color: #666; 
+}
+#main .section {
+    width: 90%;
+    margin: auto;
+}
+#main article {
+    margin-top: 10px;
+}
+
+/*---------------------BANNER---------------------------*/
+.bannerMain {
+    height: 100;
+    width: auto;
+}
+.bannerMain img {
+    max-width: 100%;
+    max-height: 100%;    
+}
+
+/*------------------IMAGENES----------------------*/
+.img {
+    width: auto;
+    margin: 0px 20px;
+}
+.img img{
+    max-width: 100%;
+}
+
+/*------------DESCRIPCION----------------*/
+.descripcion {
+    background-color: white;
+    margin: 0px 20px;
+    padding: 10px;
+    border-top: solid 1px #ebebeb;
+}
+.descripcion i {
+    color: #39b54a;
+    border: solid 1px #39b54a;
+    border-radius: 100%;
+    padding: 1vw;
+    margin: 15px;
+    margin-bottom: 0px;
+}
+.precio {
+    margin: 0px 0px 0px 15px;
+    font-size: 18px;
+}
+.off {
+    color: #39b54a;
+    font-size: 16px;
+    margin: 1px 0px 0px 15px;
+}
+.descripcion h5 {
+    display: none;
+    margin: 0px 0px 0px 15px;
+    font-size: 16px; 
+    font-weight: lighter;   
+}
+
+/*------------------TITULARES---------------------*/
+.main h3 {
+    font-size: 24px;    
+}
+
+/*------------------FOOTER---------------*/
+footer {
+    color: #666;
+}
+#footer .icono i {
+    color: #1259c3;
+    margin: 40px 20px 10px 20px;
+    font-size: 2em;
+}
+#footer section {
+    text-align: center;
+    margin: auto;
+}
+#footer h4 {
+    margin-top: 0px;
+    margin-bottom: 1px;
+    font-size: large;
+}
+#footer p {
+    margin-top: 0px;
+}
+#divFooter {
+    padding-top: 10px;
+}
+
+/*-------------MEDIA----------*/
+
+@media (min-width: 361px) {
+    ul {
+        display: block;
+    }
+    .burger-menu{
+        display: none;
+    }
+    .img {
+        box-shadow: 0px 0px 10px rgb(100, 100, 100);
+    }
+    .descripcion{
+        box-shadow: 0px 0px 10px rgb(100, 100, 100);
+    }
+    .descripcion h5 {
+        display: block;
+    }
+}
+
+@media (min-width: 769px) {
+    
+}
