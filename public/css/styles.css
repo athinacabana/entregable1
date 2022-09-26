@@ -1,178 +1,129 @@
-body {
-    font-size: 12px;
-    font-family: 'Playfair Display', roboto;    
+*{
+    margin: 0px;
+    padding: 0px;
 }
 
-/*-------------------- HEADER --------------------------*/
-#header {
+body{
+    font-family: 'Roboto', sans-serif;
+    background-color: #ebebeb;
+}
+
+h3{
+    font-size: 24px;
+}
+
+p{
+    font-size: 12px;
+}
+div.top-header{
+    padding: 5%;
+}
+
+header{
     background-color: #EAC926;
 }
 
-/*LOGO*/
-.logo {
-    width: 150px;
-    height: 50px;
-    margin: 30px 10px 0px 30px;
-    padding-top: 20px;
-}
-.logo img {
-    max-width: 100%;
-    max-height: 100%;   
+header div.logo{
+    width: 50%;
 }
 
-/*BARRA DE BUSQUEDA*/
-.barraDeBusqueda {
-    margin-left: 15px;
+header div.logo{
+    padding: 10px;
 }
-.barraDeBusqueda i {
-    background-color: #ebebeb;
-    border-radius: 5%;
-    border: solid 1px #666;
-    padding: 1px 0px;
-    margin: 1px;
+header nav{
+    font-size: 12px;
 }
 
-
-/*TEXTO*/
-.textoHeader {
-    text-align: center;
+header ul li{
+    list-style-type: none;
 }
 
-/*NAVEGADOR*/
-ul {
-    padding: 0px 0px;
-    margin: 0px 0px 0px 0px;
-    display: none;
-}
-.listaDes a{
+header ul li a{
     text-decoration: none;
+    color: #000;
 }
 
-/*MENU BURGER*/
-.burger-menu i{
-    color: white;
-    background-color: #1259c3;
-    padding: 10px 15px;
-    border-radius: 15%;
-    font-size: 25px;
-    margin: 15px 57% 10px 43%;
+header .form .input{
+    background-color: #FFF;
+    border: 1px solid #000;
+    outline: none;
+    color: #666;
+    padding: 2px;
+}
+header .form .submit{
+    background-color: #FFF;
+    border: 1px solid #000;
+    color: #666;
+    width: 10%;
 }
 
-/*--------------------------MAIN---------------------------*/
-main {
-    background-color: #ebebeb;
-    text-align:left;
-    padding-bottom: 10px;
-    color: #666; 
-}
-#main .section {
-    width: 90%;
-    margin: auto;
-}
-#main article {
+header div.top-header p{
+    width: 100%;
+    text-align: center;
     margin-top: 10px;
 }
 
-/*---------------------BANNER---------------------------*/
-.bannerMain {
-    height: 100;
-    width: auto;
-}
-.bannerMain img {
-    max-width: 100%;
-    max-height: 100%;    
+div.burger-menu{
+    text-align: center;
 }
 
-/*------------------IMAGENES----------------------*/
-.img {
-    width: auto;
-    margin: 0px 20px;
-}
-.img img{
-    max-width: 100%;
-}
-
-/*------------DESCRIPCION----------------*/
-.descripcion {
-    background-color: white;
-    margin: 0px 20px;
+div.burger-menu i{
+    background-color: #0044AA;
+    border-radius: 5px;
+    color: #FFF;
+    font-size: 20px;
+    height: 40px;
+    margin: 10px 0px 20px 0px;
     padding: 10px;
-    border-top: solid 1px #ebebeb;
+    width: 40px;
 }
-.descripcion i {
-    color: #39b54a;
-    border: solid 1px #39b54a;
-    border-radius: 100%;
-    padding: 1vw;
-    margin: 15px;
-    margin-bottom: 0px;
+
+article div.main-article{
+    width: 100%;
 }
-.precio {
-    margin: 0px 0px 0px 15px;
+
+.price{
     font-size: 18px;
 }
-.off {
-    color: #39b54a;
+
+.discount,
+.description{
     font-size: 16px;
-    margin: 1px 0px 0px 15px;
-}
-.descripcion h5 {
-    display: none;
-    margin: 0px 0px 0px 15px;
-    font-size: 16px; 
-    font-weight: lighter;   
+    font-weight: normal;
 }
 
-/*------------------TITULARES---------------------*/
-.main h3 {
-    font-size: 24px;    
-}
-
-/*------------------FOOTER---------------*/
-footer {
+h3,
+.description{
     color: #666;
 }
-#footer .icono i {
-    color: #1259c3;
-    margin: 40px 20px 10px 20px;
-    font-size: 2em;
-}
-#footer section {
-    text-align: center;
-    margin: auto;
-}
-#footer h4 {
-    margin-top: 0px;
-    margin-bottom: 1px;
-    font-size: large;
-}
-#footer p {
-    margin-top: 0px;
-}
-#divFooter {
-    padding-top: 10px;
+
+section.banner img{
+    width: 100%;
 }
 
-/*-------------MEDIA----------*/
-
-@media (min-width: 361px) {
-    ul {
-        display: block;
-    }
-    .burger-menu{
-        display: none;
-    }
-    .img {
-        box-shadow: 0px 0px 10px rgb(100, 100, 100);
-    }
-    .descripcion{
-        box-shadow: 0px 0px 10px rgb(100, 100, 100);
-    }
-    .descripcion h5 {
-        display: block;
-    }
+main{
+    width: 90%;
 }
 
-@media (min-width: 769px) {
-    
+main section article{
+    background-color: #fff;
 }
+
+main section article img{
+    width: 100%;
+}
+
+main section article i,
+.discount{
+    color: #39b54a;
+}
+
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    }
+    div.contenedor-precio{
+        display: flex;
+        flex-direction: row;
+    }
