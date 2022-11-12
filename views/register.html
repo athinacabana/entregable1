@@ -1,0 +1,37 @@
+<form action="/registro" method="get">
+    <label for="nombreApellido">Nombre Y apellido:</label>
+    <input required type="text" name="nombre y apellido" id="nombre y apellido">
+
+    <label for="usuario">Ingrese el usuario:</label>
+    <input required type="text" name="usuario">
+
+    <label for="fechaDeNacimiento">Fecha De Nacimiento:</label>
+    <input required type="date" name="fecha">
+
+    <label for="domicilio">Ingrese su domicilio:</label>
+    <input required type="text" name="domicilio">
+
+    <label for="perfilDelUsuario">Perfil Del usuario:</label>
+    <input type="radio" name="medio" value="Comprador"> Comprador
+    <input type="radio" name="medio" value="Vendedor"> Vendedor 
+
+    <label for="CategoriasDeInteres">Categorias De Interes:</label>
+    <input type="checkbox" name="categorias" value="Electro"> Electro
+    <input type="checkbox" name="categorias" value="Moda"> Moda
+    <input type="checkbox" name="categorias" value="Hogar"> Hogar
+    <input type="checkbox" name="categorias" value="Juguetería"> Juguetería
+    <input type="checkbox" name="categorias" value="Vida sana"> Vida sana 
+
+    <label for="FotoDeUsuario">Seleccione su foto de usuario:</label>
+    <input type="file" name="Perfil" accept=".jpg" multiple>
+
+    <label for="Contraseña">Ingrese su contraseña: </label>
+    <input required type="password" name="clave">
+
+    <label for="ConfirmacionContraseña">Confirme su contraseña: </label>
+    <input required type="password" name="clave">
+
+    <button type="reset">Cancelar</button>
+    <button type="submit">Enviar</button>
+
+    </form>

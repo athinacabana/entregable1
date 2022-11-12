@@ -1,55 +1,135 @@
 *{
     margin: 0px;
     padding: 0px;
+    box-sizing: border-box;
 }
 
+/*body*/ 
+
 body{
+    font-size: 12px;
     font-family: 'Roboto', sans-serif;
     background-color: #ebebeb;
 }
 
-h3{
+/* precios , descuentos y descripcion*/
+
+.price {
+    font-size: 18px;
+    flex-grow: 0.3;
+    padding: 0;
+    margin: 0%;
+}
+
+.discount {
+    font-size: 16px;
+}
+
+.description {
+    font-size: 16px;
+}
+
+.fas fa-truck {
+    display: flex;
+    width: 15%;
+    position: relative;
+    flex-direction: row-reverse;
+    align-content: center;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-evenly;
+    top: -1.8pc;
+    right: -87%;
+}
+
+.description i {
+    color: #39b54a;
+    display: block;
+    margin: auto;
+    font-size: 16px;
+    padding: 5px;
+    width: 30px;
+    height: 30px;
+    border: 1px solid #39b54a;
+    background-color: #FFF;
+    border-radius: 50%;
+    transition: all 450ms;
+}
+
+.h3 {
     font-size: 24px;
 }
 
-p{
-    font-size: 12px;
-}
-div.top-header{
-    padding: 5%;
-}
+/* header */
 
 header{
     background-color: #EAC926;
+    text-align:left;
+    width: 100%;
 }
 
-header div.logo{
+.top-header{
+    display: flex;
+    flex-wrap: wrap;
+    box-sizing: border-box;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/* navegador */
+
+.navegador a {
+    text-decoration: none;
+    color: #222222;
+    display: inline-block;
+}
+
+/* logo */
+
+.logo{
+    width: 50%;
+    padding: 3%;
+}
+
+.logo img{
+    width : fit-content
+}
+
+/* barra de busqueda , botones, etc*/
+
+.busqueda{
     width: 50%;
 }
 
-header div.logo{
-    padding: 10px;
+.buscar{
+    padding: 0 5%;
+    display: flex;
 }
+
+.buscar input{
+    width: 90%;
+    padding: 5% 5px;
+    border: none;
+    border-radius: 3px 0 0 3px;
+    font-weight: 500;
+}
+
+.buscar button{
+    width: 10%;
+    padding: 1px;
+    background-color: #FFF;
+    border-radius: 3px 0 3px 0;
+    border: none;
+}
+
+.busqueda .icono {
+    color: #666666
+}
+
 header nav{
     font-size: 12px;
 }
 
-header ul li{
-    list-style-type: none;
-}
-
-header ul li a{
-    text-decoration: none;
-    color: #000;
-}
-
-header .form .input{
-    background-color: #FFF;
-    border: 1px solid #000;
-    outline: none;
-    color: #666;
-    padding: 2px;
-}
 header .form .submit{
     background-color: #FFF;
     border: 1px solid #000;
@@ -57,73 +137,222 @@ header .form .submit{
     width: 10%;
 }
 
-header div.top-header p{
+header .top-header p{
     width: 100%;
     text-align: center;
     margin-top: 10px;
 }
 
-div.burger-menu{
-    text-align: center;
-}
+/* burger menu */
 
-div.burger-menu i{
+.burger-menu i{
     background-color: #0044AA;
-    border-radius: 5px;
+    border-radius: 15%;
     color: #FFF;
-    font-size: 20px;
+    font-size: 25px;
     height: 40px;
-    margin: 10px 0px 20px 0px;
-    padding: 10px;
+    margin: 15px 57% 10px 43%;
+    padding: 10px 10px;
     width: 40px;
 }
 
-article div.main-article{
-    width: 100%;
+/* footer */
+
+footer{
+    color:#666;
+    background-color: white;
 }
 
-.price{
-    font-size: 18px;
+footer  i {
+    color: #1259c3;
+    margin: 40px 20px 10px 20px;
+    font-size: 2em;
+}
+footer i:hover {
+    color: #001f51;
 }
 
-.discount,
-.description{
-    font-size: 16px;
-    font-weight: normal;
-}
+/* main */
 
-h3,
-.description{
+.main {
+    background-color: #ebebeb;
+    text-align: left;
+    padding-bottom: 10px;
     color: #666;
-}
-
-section.banner img{
-    width: 100%;
-}
-
-main{
     width: 90%;
+    margin: auto;
 }
 
-main section article{
+
+main .products{
     background-color: #fff;
 }
 
-main section article img{
+main .products{
+   margin-top: 10px;
+}
+
+main article:hover .description{
+    box-shadow: 0px 0px 10px rgb(100, 100, 100)
+}
+
+main article:hover .img{
+    box-shadow: 0px 0px 10px rgb(100,100,100)
+}
+
+article:hover .fa-truck {
+    transform: rotate(-90deg);
+    transition: 450ms;
+}
+
+/* banner */
+
+.banner{
+width: 100%;
+}
+
+.banner img {
     width: 100%;
+    max-width: 100%;
 }
 
-main section article i,
-.discount{
-    color: #39b54a;
+/* Imagenes */
+ 
+.img{
+    width: auto;
+    margin: 0px 20px;
+    display: flex;
 }
 
-*{
-    margin: 0px;
-    padding: 0px;
-    box-sizing: border-box;
+.img img{
+    width: 100%;
+    height: 100%;;
+}
+
+
+/* media querie celular */
+
+    @media (min-width: 361px){
+        
+         /*body*/
+
+         /* precios, descuentos , descripcion */
+
+        .descripcion {
+            box-shadow: 0px 0px 10px rgb(100, 100, 100);
+        }
+        .contenedor-texto h5 {
+            display: block;
+        }
+
+         /* header */
+
+         /* navegador */
+
+         .navegador{
+            display: flex;
+            justify-content: space-between;
+         }
+
+         
+         /* logo */
+
+         .logo {
+            width: 30%;
+        }
+        .logo img {
+            min-width: fit-content;
+        } 
+
+         /* barra de busqueda , botones, etc*/
+
+         .busqueda{
+            width: 35%;
+            margin: auto;
+         }
+
+         .input {
+            width: 35%;
+            margin: auto;
+        } 
+
+        .enviar {
+            background-color: #0022AA;
+            color: #fff;
+            transition: all 0.5s
+            }
     }
-    div.contenedor-precio{
-        display: flex;
-        flex-direction: row;
-    }
+
+         /* burguer menu */
+
+         /* footer */
+
+         /* main */
+
+         .section {
+            display: flex;
+            flex-wrap: wrap;
+        }
+        .section article {
+            width: 50%;
+        }
+
+         /* banner */
+
+         /* imagenes */
+
+         .product_img{
+            width: auto;
+            margin: 0px 20px;
+            display: flex;
+            width: 100%;
+            height: 100%;
+        }
+
+        #main .img {
+            box-shadow: 0px 0px 10px rgb(100, 100, 100);
+        }
+
+
+        /* media querie computadora */
+
+        @media (min-width: 769px) {
+
+        /*body*/
+    
+        body {
+        font-size: 16px;
+            }
+         /* precios, descuentos , descripcion */
+
+         /* header */
+
+        header {
+            padding: 0 20px;
+        }
+
+         /* navegador */
+
+         
+         /* logo */
+
+         /* barra de busqueda , botones, etc*/
+
+         /* burguer menu */
+
+         /* footer */
+
+         /* main */
+
+         .section article {
+            width: 25%;
+        }
+    
+
+         /* banner */
+
+         /* imagenes */
+         .img {
+            box-shadow: none;
+        }
+        }
